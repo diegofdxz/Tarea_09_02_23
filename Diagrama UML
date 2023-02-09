@@ -1,0 +1,12 @@
+@startuml
+Interface Dialogo{}
+Abstract Class DialogoWindows implements Dialogo{}
+Abstract DialogoMac implements Dialogo{}
+Abstract FabricaWindows implements DialogoWindows{}
+Abstract FabricaMac implements DialogoMac{}
+
+Class Cliente{}
+
+Cliente -- FabricaWindows : usa para crear dialogos
+Cliente -- FabricaMac
+@enduml
