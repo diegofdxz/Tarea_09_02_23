@@ -1,13 +1,5 @@
-package refactoring_guru.abstract_factory.example;
 
-import refactoring_guru.abstract_factory.example.app.Application;
-import refactoring_guru.abstract_factory.example.factories.GUIFactory;
-import refactoring_guru.abstract_factory.example.factories.MacOSFactory;
-import refactoring_guru.abstract_factory.example.factories.WindowsFactory;
 
-/**
- * Demo class. Everything comes together here.
- */
 public class Demo {
 
     /**
@@ -28,8 +20,9 @@ public class Demo {
         return app;
     }
 
-    public static void main(String[] args) {
+public static void main(String[] args) {
         Application app = configureApplication();
         app.paint();
     }
+    
 }
